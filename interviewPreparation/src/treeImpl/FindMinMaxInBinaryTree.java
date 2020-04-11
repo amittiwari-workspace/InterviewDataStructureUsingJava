@@ -37,6 +37,7 @@ public class FindMinMaxInBinaryTree {
 			if(tempNode.right!=null)queue.offer(tempNode.right);
 				
 		}
+		
 		System.out.println("Max Value of Node in Tree: "+maxValue+" Min Value of Node in Tree: "+minValue);
 	}
 
