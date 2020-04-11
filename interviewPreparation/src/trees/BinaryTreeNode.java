@@ -33,6 +33,7 @@ public class BinaryTreeNode {
 			root.right=new BinaryTreeNode(7);
 			root.left.left=new BinaryTreeNode(8);
 			root.left.right=new BinaryTreeNode(9);
+			root.left.left.left=new BinaryTreeNode(10);
 			return root;
 	 }
 }
