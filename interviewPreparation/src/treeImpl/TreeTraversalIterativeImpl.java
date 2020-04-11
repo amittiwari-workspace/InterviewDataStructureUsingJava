@@ -18,5 +18,8 @@ public class TreeTraversalIterativeImpl {
 		System.out.println();
 		System.out.println("InOrder Traversal Iterative");
 		TreeTraversalIterative.inOrder(root);
+		System.out.println();
+		System.out.println("Level Order Traversal");
+		TreeTraversalIterative.levelOrderTraversal(root);
 	}
 }

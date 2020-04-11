@@ -1,5 +1,7 @@
 package trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class TreeTraversalIterative {
@@ -71,5 +73,23 @@ public class TreeTraversalIterative {
 			BinaryTreeNode resultTempNode=stackTwo.pop();
 			System.out.print(resultTempNode.getData());
 		}	
+	}
+	
+	public static void levelOrderTraversal(BinaryTreeNode root)
+	{
+	 Queue<BinaryTreeNode> queue=new LinkedList<BinaryTreeNode>();
+	 if(root==null)return;
+	 queue.offer(root);
+	 while(queue!=null&&!queue.isEmpty())
+	 {
+		 BinaryTreeNode tempNode=queue.poll();
+		 System.out.print(tempNode.getData());
+		 
+		 if(tempNode.left!=null)
+			 queue.offer(tempNode.left);
+		 
+		 if(tempNode.right!=null)
+			 queue.offer(tempNode.right);	 
+	 }
 	}
 }
