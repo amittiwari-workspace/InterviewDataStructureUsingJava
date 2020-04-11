@@ -10,6 +10,7 @@ public class IsBinaryTreeHeightBalanced {
 		
 		root=BinaryTreeNode.createTree();
 		System.out.println("Is Tree Balanced: "+isTreeHeightBalanced(root));
+	
 	}
 
 	private static boolean isTreeHeightBalanced(BinaryTreeNode root) {
