@@ -1,4 +1,4 @@
-package graph;
+package graphstandardproblems;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -10,21 +10,19 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 
-import graph.Graph.Vertex;
-
-public class Graph<T> {
+public class GraphGenerics<T> {
 	
 	private List<Edges<T>> allEdges;
 	private Map<Long, Vertex<T>> allVertex;
 	boolean isDirected=false;
 	
-	public Graph(boolean isDirected) {
+	public GraphGenerics(boolean isDirected) {
 		allEdges=new ArrayList<Edges<T>>();
 		allVertex=new HashMap<Long, Vertex<T>>();
 		this.isDirected=isDirected;
 		
 	}
-	public Graph(List<Edges<T>> allEdges, Map<Long,Vertex<T>> allVertex, boolean isDirected) {
+	public GraphGenerics(List<Edges<T>> allEdges, Map<Long,Vertex<T>> allVertex, boolean isDirected) {
 		super();
 		this.allEdges = allEdges;
 		this.allVertex = allVertex;
